@@ -9,6 +9,7 @@ body {
     background-image: url(images/10399708_101471406535097_6273954_n.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 html {    
@@ -23,6 +24,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 
 h1 {
     font-family: 'Sriracha', cursive;
@@ -42,6 +44,13 @@ h2 {
     padding-top: 2rem;
     font-size: 3rem;
     font-weight: inherit;
+}
+
+header h3 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 3rem;
+    text-align: center;
 }
 
 
@@ -72,13 +81,21 @@ p {
 }
 
 #projects .container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    grid-column-gap: 1em;
-    max-width: 1000px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
     width: 100%;
-    margin-bottom: 10rem;
+    margin: auto;
+}
+
+.container article {
+    float: left;
+    border-radius: 5px;
+    width: 270px;
+    margin: 15px;
 }
 
 article {
@@ -89,13 +106,47 @@ article {
     margin-top: 1rem;
     padding-bottom: 7rem;
     text-shadow: 2px 2px 3px black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      font-size: 2rem;
-      color: white;
-      font-weight: bold;
-      flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    background: rgba(94, 149, 92, 0.328);
+}
+
+
+nav a { 
+    padding: .5em 2em;
+    text-decoration: none;
+    color: #fff
+}
+
+nav a:hover {
+    background: rgba(88, 155, 82, 0.376);
+}
+
+footer {
+    background: rgba(111, 221, 126, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 

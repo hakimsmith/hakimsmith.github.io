@@ -1,0 +1,101 @@
+* {
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/10399708_101471406535097_6273954_n.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+html {    
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Sarabun', sans-serif;
+}
+  
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Sriracha', cursive;
+    text-shadow: 2px 2px 3px black;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem 0 0 0;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-weight: inherit;
+}
+
+
+#mypic {
+    border-radius: 50%;
+}
+
+.mypicture {
+    margin: 0 auto;
+    position: relative;
+    }
+
+p {
+    display: block;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-shadow: 2px 2px 3px black;
+}
+
+#aboutMe {
+    color: white;
+    background-size: cover;
+    text-align: center;
+    height: auto;
+}
+
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+article {
+    display: block;
+}
+
+#contactInfo {
+    margin-top: 1rem;
+    padding-bottom: 7rem;
+    text-shadow: 2px 2px 3px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+      font-weight: bold;
+      flex-wrap: wrap;
+}
+
